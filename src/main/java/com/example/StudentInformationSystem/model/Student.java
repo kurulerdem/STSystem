@@ -24,6 +24,37 @@ public class Student {
     @Column(name="grade")
     private String grade;
 
+    @Column(name="email")
+    private String email;
+
+    @Column(name="department")
+    private String department;
+    @Column(name="number")
+    private Integer number;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
 
     public Long getId() {
         return id;
